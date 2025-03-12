@@ -1,0 +1,48 @@
+{
+  "name": "@comertcimen/app-store-connect-api-ts",
+  "version": "0.0.1",
+  "description": "Provides typesafe access to the App Store Connect API",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/app-store-connect-api.js",
+  "types": "dist/app-store-connect-api.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "generate": "bun scripts/openapi-create-client.ts",
+    "test": "bun test",
+    "build": "bun scripts/bun-build.ts",
+    "build-and-publish": "bun scripts/bun-build.ts && npm publish --access public"
+  },
+  "devDependencies": {
+    "@hey-api/openapi-ts": "^0.60.1",
+    "@types/bun": "latest",
+    "bun-plugin-dts": "^0.3.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@hey-api/client-fetch": "^0.5.7",
+    "jose": "^6.0.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comertcimen/App-Store-Connect-API-ts.git"
+  },
+  "keywords": [
+    "ios",
+    "typescript",
+    "appstore",
+    "appstoreconnect",
+    "apple",
+    "api",
+    "sdk"
+  ],
+  "author": "Cömert Cimen",
+  "bugs": {
+    "url": "https://github.com/comertcimen/App-Store-Connect-API-ts/issues"
+  },
+  "homepage": "https://github.com/comertcimen/App-Store-Connect-API-ts#readme"
+}
